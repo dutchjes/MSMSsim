@@ -31,8 +31,8 @@ PandRdat <- function(realdata, randdata, metricList = metricList, steps = 0.001,
       
       thres <- (i-1)*steps
       pandr[i,1] <- thres
-      pandr[i,2] <- length(which(realdata[,paste(metric)] > thres)) / real.npair
-      pandr[i,3] <- length(which(randdata[,paste(metric)] > thres)) / rand.npair
+      pandr[i,2] <- length(which(randdata[,paste(metric)] > thres)) / rand.npair
+      pandr[i,3] <- length(which(realdata[,paste(metric)] > thres)) / real.npair
       
     }
     
