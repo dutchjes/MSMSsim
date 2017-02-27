@@ -19,4 +19,3 @@ Merging of spectra
 \examples{
 
 }
-

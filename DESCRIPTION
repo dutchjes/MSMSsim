@@ -1,10 +1,11 @@
 Package: MSMSsim
 Type: Package
-Title: What the package does (short line)
+Title: Functions for processing HRMS2 spectra from output from RMassBank, mainly for calculating spectral similarity 
 Version: 1.0
-Date: 2016-04-08
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Date: 2017-02-27
+Author: Jennifer E. Schollée
+Maintainer: Jennifer E. Schollée <jennifer.schollee@eawag.ch>
+Description: Uses the output of RMassBank long-form table with fragment information to generate HRMS2 spectra. Functions included for generating merged spectra from different collision energies.
+Spectral similarity function included to calculate similarity based on the dot product, including weighting factors for both m/z and intensity. 
 License: What license is it under?
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

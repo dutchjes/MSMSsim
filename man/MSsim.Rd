@@ -20,4 +20,3 @@ Similarity score calculation
 correlation coeffiecient is calculated as (u %*% v) / ( sqrt(sum(u*u)) * sqrt(sum(v*v)) ) where u in the first input vector and
 v is the second input vector and %*% is the dot product
 }
-

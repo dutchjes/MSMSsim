@@ -32,4 +32,3 @@ Calculates similarity score of two MSMS spectra using modified cosine
 \examples{
 
 }
-

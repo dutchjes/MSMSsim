@@ -24,4 +24,3 @@ Builds the merged fragment table
 \examples{
 
 }
-

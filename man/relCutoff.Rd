@@ -20,4 +20,3 @@ Relative intensity cutoff
 \examples{
 
 }
-

@@ -19,4 +19,3 @@ spectra from single CE function
 \examples{
 
 }
-

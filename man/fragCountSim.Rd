@@ -37,4 +37,3 @@ Calculates similarity score of two MSMS spectra using count of matched fragments
 \examples{
 
 }
-

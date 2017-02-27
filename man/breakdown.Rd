@@ -21,4 +21,3 @@ Just a graphing function
 \description{
 Title
 }
-

@@ -30,4 +30,3 @@ Here the input intensity values for each spectrum are replaced by the weighted v
 \examples{
 
 }
-

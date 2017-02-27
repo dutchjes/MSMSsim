@@ -22,4 +22,3 @@ is better because doesn't require input of the pairs.
 \description{
 Merged CE data for comparison
 }
-

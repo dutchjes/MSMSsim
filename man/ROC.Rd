@@ -32,4 +32,3 @@ ROC(realdata, randdata, metricList = metricList, steps = 0.001,
 \description{
 ROC function for looking at FPR vs. TPR and graphing possibilites
 }
-

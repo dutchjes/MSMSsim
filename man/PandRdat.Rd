@@ -23,4 +23,3 @@ PandRdat(realdata, randdata, metricList = metricList, steps = 0.001,
 \description{
 Generation of PandR data for scenario evaluation
 }
-
