@@ -1,5 +1,16 @@
 ## merged spectra function
 
+#' Title
+#'
+#' @param all.frag 
+#' @param intensity.type 
+#' @param dmz 
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' 
 mergedSpectra <- function(all.frag, intensity.type = "absolute", dmz = 0.001){
   
   if(intensity.type != "absolute" & intensity.type != "relative"){
