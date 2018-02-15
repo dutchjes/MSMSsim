@@ -19,9 +19,13 @@
 simTable <- function(spec.top, spec.bottom, t = 0.005, replace.na = 0){
   
   spec.top <- data.frame(mz = spec.top[, 1], intensity = spec.top[,2] ) 
+  # spec.top <- as.data.frame(peaks(ms, top.scan.number))
+  # colnames(spec.top) <- c("mz", "intensity")
 
   spec.bottom <- data.frame(mz = spec.bottom[, 1], intensity = spec.bottom[,2] )
-
+  # spec.bottom <- as.data.frame(peaks(ms, bottom.scan.number))
+  # colnames(spec.bottom) <- c("mz", "intensity")
+  
   for (i in 1:nrow(spec.bottom)) 
     spec.top[, 1][spec.bottom[, 1][i] >= spec.top[,1] - t & spec.bottom[, 1][i] <= spec.top[, 1] + t] <- spec.bottom[,1][i]
   
@@ -44,12 +48,12 @@ simTable <- function(spec.top, spec.bottom, t = 0.005, replace.na = 0){
 #'
 #' @examples
 #' 
-relCutoff <- function(alignment, b = 0.05, replace.na = 0){
+relCutoff <- function(alignment, b = 0.01, replace.na = 0){
   
   alignment <- data.frame(mz = alignment[,1], intensity.top = alignment[,2], intensity.bottom = alignment[,3])
   
-  alignment$int.top.normalized <- alignment$intensity.top / max(alignment$intensity.top) * 100
-  alignment$int.bottom.normalized <- alignment$intensity.bottom / max(alignment$intensity.bottom) * 100
+  alignment$int.top.normalized <- alignment$intensity.top / max(alignment$intensity.top)
+  alignment$int.bottom.normalized <- alignment$intensity.bottom / max(alignment$intensity.bottom)
   
   below <- which(alignment$int.top.normalized <= b)
   alignment[below,"intensity.top"] <- replace.na
