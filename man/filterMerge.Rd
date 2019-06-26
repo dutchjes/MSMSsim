@@ -4,14 +4,17 @@
 \alias{filterMerge}
 \title{Merging of spectra}
 \usage{
-filterMerge(peaks, dmz = 0.001, int = 1e+20)
+filterMerge(peaks, dmz = 0.001, int = 10)
 }
 \arguments{
-\item{peaks}{Data frame with the peaks which are to be merged. Column 1 should be mz, column 2 should be intensity}
+\item{peaks}{Data frame with the peaks which are to be merged. Column 1 should be mz, column 2 should be absolute intensity}
 
 \item{dmz}{Delta m/z requested for merging, in Da. Default is 0.001}
 
-\item{int}{Intensity cutoff for merging}
+\item{int}{Intensity cutoff for merging. Currently not applied}
+}
+\value{
+data frame with merged peaks. Column 1 is mz, column 2 is absolute intensity, and a new column 3 is the frequency of the fragment. Data frame is ordered by frequency
 }
 \description{
 Merging of spectra

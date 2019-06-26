@@ -4,7 +4,7 @@
 \alias{relCutoff}
 \title{Relative intensity cutoff}
 \usage{
-relCutoff(alignment, b = 0.05, replace.na = 0)
+relCutoff(alignment, b = 0.01, replace.na = 0)
 }
 \arguments{
 \item{alignment}{merged fragment table, for example output from simTable()}
